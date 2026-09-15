@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Breakout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="hud">
+      <div><span>Pontos</span><strong id="score">0</strong></div>
+      <div><span>Nível</span><strong id="level">1</strong></div>
+      <div><span>Vidas</span><strong id="lives">♥♥♥</strong></div>
+      <div><span>Recorde</span><strong id="best">0</strong></div>
+    </header>
+
+    <section class="stage">
+      <canvas id="game" width="640" height="480"></canvas>
+      <div id="overlay" class="overlay">
+        <h1>BREAKOUT</h1>
+        <p>Mouse, toque ou <kbd>←</kbd><kbd>→</kbd> movem a raquete · <kbd>Espaço</kbd> lança a bola e pausa</p>
+        <p class="powerups">
+          <span class="pu" style="--c:#38bdf8">⬌ raquete larga</span>
+          <span class="pu" style="--c:#f472b6">✚ multibola</span>
+          <span class="pu" style="--c:#a3e635">◔ bola lenta</span>
+          <span class="pu" style="--c:#fb7185">♥ vida extra</span>
+          <span class="pu" style="--c:#fbbf24">⚡ bola de fogo</span>
+        </p>
+        <p class="cta">Toque ou pressione uma tecla para começar</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/levels.js"></script>
+  <script src="js/paddle.js"></script>
+  <script src="js/ball.js"></script>
+  <script src="js/bricks.js"></script>
+  <script src="js/powerups.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
